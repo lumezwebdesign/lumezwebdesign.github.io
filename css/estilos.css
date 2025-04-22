@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    background-color: #6deb75;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+
+}
+
+main .textos{
+
+    font-family: "Open sans", Arial, sans-serif;
+    font-size: 40px;
+    color: #000; 
+} 
+ 
+main .textos .primera_linea {
+    position: relative;
+    text-align: center;
+            
+}
+
+main .textos .segunda_linea {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    
+}
+
+
+.reviews .container {
+    background-color: #808080;
+    position: relative;
+    width: 100%;
+    height: 420px;
+   
+} 
+.reviews .container .titulo {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.widgets {
+    text-align: center;
+}
+
+.widgets .nombre {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.widgets .btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#bdb76b;
+    border-width: 2px;
+    border-color: #fff;
+    text-decoration-color: #fff  ;
+    
+}
+
+.widgets p {
+    font-family: "Helbetica"; 
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+       
+footer .container  {
+    background-color: #000;
+    height: 60px;
+
+ }
+
+ footer .container .text  {
+    font-size: 16px;
+    font-family: Open sans, Arial, sans serif;
+    font-weight: 300;
+    text-align: center;
+    color:#fff
+
+}
+
+footer .text p {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+   
+   /*----------Media Queries-----------*/
+   @media screen and (max-width: 700px) {
+    .navbar .container button {
+        border-color: #fff;
+        border-width: 2px;
+        background: #bdb76b;
+        overflow: visible;
+    }
+
+    main .textos .segunda_linea {
+        font-size: 20px;
+    }
+
+    .reviews .container .titulo {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .widgets {
+        text-align: center;
+        margin-top: -10px;
+         
+        
+    }
+
+    .widgets .nombre {
+        font-size: 16px;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    
+    
+    }
+
+    .widgets .btn {
+        max-height: 30px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+        
+        
+    }
+
+    .widgets p {
+        font-family: "Helbetica";
+        font-weight: 500;
+        font-size: 12px;
+        padding-bottom: 0px;
+        padding-top: 5px;
+        
+    }
+
+    footer .text p {
+        font-size: 12px;
+    } 
+}

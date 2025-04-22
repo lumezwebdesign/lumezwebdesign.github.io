@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+   body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+
+}
+   .contenedor { /*Este es el contenerdor de todo el body ó sea de toda la pagina*/
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+     overflow: hidden;/*Nos permite acomodar el comportamiento de las cajas cuando trabajamos con float*/
+
+}
+   /*-------HEADER-----------*/
+   header {
+    width: 100%;
+    background: url('img/cafeteria.jpg');
+    background-size: cover;
+    background-attachment: fixed;/*Pra que el fondo se quede pegado a pantalla */
+    background-position: center 0;
+    opacity: .8;/*Es para darle sombreado ó nubosidad a los fondos como fotos y demás*/
+}
+   header .contenedor {
+     position: relative;/* esto es para cuando queremos mover los elementos*/
+     height: 600px;
+}
+
+   header .menu { /*Se refiere al menú de navegación*/
+    width:100%;
+    text-align: right;/* Para que los elementos de pongan a la derecha*/
+
+}
+
+   header .menu a { /* Se refiere a los enlaces del menú de navegación*/
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;/*Este font-weight es el tamaño del grosor del texto en este caso del menú de navegación*/
+    display: inline-block;/* Para que los elementos se pongan uno al lado del otro*/
+    margin: 40px 20px;
+    text-decoration: none;/*Text decoration es practicamente los subrrayado de las palabras del menú y none es para borrarlas*/
+    position: relative;/*Esta position relative tambien hace mover los elementos como en cortina ó en olas */
+    
+}
+
+   header .menu a:hover {
+    text-decoration: underline;
+}
+
+   header .textos {
+    width: 100%;
+    color: #fff;
+    position: absolute;/*Esta position: absolute es para que cuando mueva la pagina los textos tambien se muevan a su ritsmo */
+    top: 50%;
+    margin-top: -52px;/*Esto es para que el texto quede mas centrado*/
+}
+   header .textos .nombre {
+    font-size: 50px;
+    font-weight: 800;
+}
+   header .textos .nombre span {
+    font-weight: 400;
+} 
+
+   header .textos h3 {
+    font-weight: 400;
+    font-size: 25px;
+    font-style: italic;
+}
+
+   /*--------MAIN------------*/
+
+   .main {
+     background: url('../img/textura.png');/* Esta textura esta plasmada en el fondo del main*/
+     background-repeat: repeat;/* esto es para que funcione en todos los navegadores*/
+}
+
+   .main .acerca-de .contenedor {
+     overflow: visible;
+     position: relative;/* Nos permite manipular la posicion del elemento*/
+}
+
+   .main .acerca-de .foto {
+     width: 80%;
+     position: absolute;/*Con esta position absolute la foto la pdemos poner donde queramos a partir del contenedor*/
+     left: 0;
+     top: -50px;/*Con esto la foto queda por encima del contenedor del header*/ 
+     z-index: 0;/*Esta z-index de 0 es para que la foto pase por debajo del texto */
+     box-shadow: 0px 0px 15px rgba(0,0,0, .35);
+}
+
+   .main .acerca-de .foto img {
+     vertical-align: top;
+     width: 100%;
+}  
+
+   .main .acerca-de article {
+      background: #fff;
+      padding: 40px;
+      width: 50%;
+      position: relative;
+      top: 500px;/*Con esta cantidad al mover el scroll el acerca-de foto y el acerca-de texto quedan iguales al llegar arriba */
+                 /*top: 200px;*//*Con esta cantidad al mover el scroll el acerca-de texto queda por encima del acerca-de foto al llegar arriba */
+      z-index: 1;
+      float: right;/*Este float es para mover el elemento a la derecha ó a a la izquierda*/
+      box-shadow: 0px 0px 15px rgba(0,0,0, .35);/* Este box-shadow y rgba es para darle sombra y resalto a el marco de la caja*/ 
+}
+
+   .main .acerca-de article h3 {
+      font-size: 50px;
+      font-weight: 300;
+      margin-bottom: 40px;
+}
+
+   .main .acerca-de article p {
+      line-height: 20px;/*Este line-height es tamaño de espacio entre las lineas de texto de un parrafo*/
+      margin-bottom: 15px;/*Este es el espacio de debajo de c/parrafo*/
+}
+
+   .main .menu {
+      padding-top: 590px;/*Este padding de 590px es por que necesitamos espacio entre el top del main y el menu para poderlo mover*/
+      margin-bottom: 50px;
+}
+
+   .main .menu .titulo {
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 40px;
+        
+}
+        
+   .main .menu .contenedor-menu, /*Estos dos juntos es para darles los mismos estilos*/
+   .main .menu .contenedor-menu2 {
+      border: 1px solid #000;
+      background: transparent;
+      padding: 10px;
+      overflow: hidden;
+}
+
+   .main .menu article {
+      width: 50%;
+      float: left;/*Este float left es para que el main menu2 se mueva a la izquierda y el menu article se parta en dos de comer y beber*/
+      padding: 20px
+
+}
+
+   .main .menu .categoria {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+
+}
+
+   .main .menu .platillo {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 4px dotted #000;/*Esta palabra dotted significa una linea de puntos que separan los platillos*/
+      overflow: hidden;/*Este overflow:hidden es para que si hay contenido que no cabe en la caja; entonces lo oculte*/
+
+}
+
+   .main .menu .nombre {
+      font-size: 20px;
+      margin-bottom: 15px;
+      float: left;
+}
+
+   .main .menu .precio {
+      font-size: 20px;
+      margin-bottom: 15px;
+      float: right;
+}
+
+   .main .menu .descripcion {
+      font-size: 16px;
+      color: #676767;
+      clear:both;/*Esto es para solucionar el problema del float:left y float:right;Pero no pasa nada si no lo ponemos*/
+}
+
+   .main .galeria {
+      overflow: hidden;/*Esto es para solucionar posibles problemas de contenido al ubicar las fotos */
+}
+
+   .main .galeria .foto {
+      width: 25%;/*Este 25% es por que son 8 fotos y asi ocuparan el 100% de la caja de la galeria y formaran 2filas*/
+      float: left;/*Para que las fotos se pongan unas al lado de otras*/
+}
+   .main .galeria .foto img {
+      width: 100%;/* O sea que abarque todo el 25% que le habiamos puesto arriba en el pedido anterior a cada foto*/
+      vertical-align: top;/* Es para que forme dos filas de fotos cada fila de cuatro fotos */
+      opacity: .7;
+}
+         
+   .main .galeria .foto:hover img {
+      opacity: 1;
+      -webkit-transition: all .3s ease;/*Esto es para que tenga una transition de 3 segundos */
+      -o-transition: all .3s ease; /*------------    "   -------------- */
+      transition:all .3s ease;    /*-------------    "   -------------- */
+}
+
+   .main .ubicacion {
+      background: #fff;
+      padding: 40px 0;
+      overflow: hidden;
+}
+
+   .main .ubicacion .titulo {
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 300;
+      margin-bottom: 10px;
+}
+
+   .main .ubicacion .direccion {
+      float: left;
+      width: 50%;
+      text-align: left;
+      overflow: hidden;
+}
+   .main .ubicacion .horarios {
+      float: right;
+      width: 50%;
+      text-align: right;
+      overflow: hidden;
+}
+   .main .ubicacion .direccion .calle {
+      margin-bottom: 15px;
+}
+
+   .main .ubicacion .horarios h4 {
+      text-align: center;
+      margin-bottom: 30px;
+}
+
+   .main .ubicacion .horarios .entre-semana, 
+   .main .ubicacion .horarios .fin-semana {
+      width: 50%;
+      float: left;
+      text-align: center;
+}
+
+   .main .mapa {
+      width: 100%;
+      overflow: hidden;
+}
+
+   .main .mapa iframe {
+      width: 100%;
+      max-height: 600px;
+}
+
+      /*-----------FOOTER----------------*/
+
+   footer {
+      background: #000;
+}
+
+   footer .copyright {
+      text-align: center;
+      padding: 15px 0;
+      color: #fff;
+}
+      /*----------MEDIA QUERIES-----------------*/
+
+@media screen  and (max-width: 800px) {
+   header .contenedor {
+      position: static;
+      height: auto;
+   }
+
+   header .textos {
+      position: static;
+      margin: 100px 0; 
+   }
+
+   header .menu { 
+      text-align: center;
+   }
+
+   header .menu a {
+      margin: 10px 10px;
+   }
+
+   header .textos .nombre {
+      font-size: 30px;
+      color:blueviolet
+   }
+
+   header .textos h3 {
+      font-size: 16px;
+      color:#fff
+   }
+
+   .main .acerca-de .foto {
+      width: 100%;
+      position: relative;
+   }
+
+   .main .acerca-de article {
+      position: relative;
+      width: 100%;
+      top: -50px;
+      transform: translate(0px, 0);
+   }
+
+   .main .menu {
+      padding-top: 300px;
+   }
+
+   .main .menu article {
+      width: 100%;
+   }
+
+   .main .galeria .foto {
+      width: 50%;
+   }
+
+   .main .mapa {
+      width: 80%;
+      margin: auto;
+   }
+}
+                     
+@media screen and (max-width: 400px) {
+   .main .acerca-de article h3 {
+      font-size: 34px;
+      margin-bottom: 10px;
+   }
+
+   .main .menu article .nombre, 
+   .main .menu article .precio {
+      font-size: 16px;
+      line-height: 16px;
+   }
+
+   .main .ubicacion .direccion,
+   .main .ubicacion .horarios { 
+      width: 100%;
+      text-align: center;
+   }
+                         
+}
+                        
+                      
+                      
+               
+

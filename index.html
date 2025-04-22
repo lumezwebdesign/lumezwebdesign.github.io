@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,
+    maximun-scalable=1.0, minimun-scalable=1.0"> 
+    <title>Pagina Web de Luis</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/8.0.1_normalize.css">
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="img/Lumez logo_1.jpg">   L U M E Z   </a>
+             <button
+             class="navbar navbar-toggler"
+             type="button"
+             data-bs-toggle="collapse" 
+             data-bs-target="#contenidoMenu"
+             aria-controls="contenidoMenu"
+             aria-expanded="false"
+             aria-label="Mostrar / Ocultar Navegacion"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button> 
+             <!--El data-bs-toggle es para indicarle a bootstrap que al presionar el boton se aplica la funcion toggle y collapsa el menú-->
+             <!--data-bs-toggle="collapse" y data-bs-target="#contenidoMenu" es para asignar automaticamente el control de uno ó más
+             elementos plegables el atributo dsta-bs-target acepta un selector css al que aplica el collapso. asegurate de agregar
+             el collapso al elemento plegable -->
+             <!--aria es el atributo que facilita la lectura ó el acceso a el contenido para las personas discapaciradas-->
+            <div class="collapse navbar-collapse" id="contenidoMenu"><!--La class="collapse" es para que el menú se pueda collapsar y 
+             navbar-collapse es para que bootstrap entienda que estos son los enlaces y queremos que de esta forma los ponga arriba en  
+             el navbar en un tamaño largo en adelante de esta forma los usuarios van a saber que al presiona el boton van a collapsar
+             este contenido-->
+            
+                <!--   Enlaces  -->
+
+                <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a href="#Reviews" class="nav-link" id="btn-reviews">Reviews</a>
+                </li>
+                 <!-- Dropdown-->
+                <li class="nav-item dropdown">
+                    <a 
+                    href="#Perfiles" 
+                    class="nav-link dropdown-toggle"
+                    id="btn-submenuperfiles"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >
+                        Perfiles
+                    </a>
+                    <!--   Sub-elementos de Perfiles-->
+                    <ul class="dropdown-menu" aria-labelledby="submenuperfiles"><!--Con el atributo aria-labelledby le voy a indicar
+                     que quiero que sean los subelementos del submenuPerfiles-->
+                        <li><a href="#Perfilfundador" class="dropdown-item" id="btn-Perfilfundador">Perfilfundador</a></li>
+                        
+                </ul>
+                </li>
+                <!----Dropdown-->
+                <li class="nav-item dropdown">
+                    <a 
+                    href="#Proyectos" 
+                    class="nav-link dropdown-toggle"
+                    id="btn-submenuproyectos"
+                    role="button"
+                    data-bs-toggle="dropdown"    
+                    >
+                        Proyectos
+                    </a>
+                    <!--   sub-elementos de Proyectos-->
+                    <ul class="dropdown-menu" aria-labelledby="submenuproyectos"><!--Con el atributo aria-labelledby le voy a indicar
+                            que quiero que sean los subelementos del submenuProyectos-->
+                        <li><a href="#Misproyectos" class="dropdown-item" id="btn-Misproyectos" >Mis proyectos</a></li>
+                </ul>
+
+                </li>
+
+                <!----Dropdown-->    
+                    <li class="nav-item dropdown">
+                    <a 
+                    href="#Contacto" 
+                    class="nav-link dropdown-toggle"
+                    id="btn-submenucontacto"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    >
+                        Contacto
+                    </a>
+                    <!---sub-elementos de Contacto-->
+                    <ul class="dropdown-menu" aria-labelledby="submenucontacto"><!--Con el atributo aria-labelledby le voy a indicar
+                        que quiero que sean los subelementos del submenucontacto-->
+                    <li><a href="#Contactame" class="dropdown-item" id="btn-Contactame">Contactame</a></li>
+                </ul>
+
+
+                </li>
+                </ul>
+                
+                <!--  Formulario de Busqueda  -->
+                <form action="" class="d-flex">
+                <input 
+                     type="text"
+                     class="form-control me-2"
+                     aria-label="Buscar"
+                     placeholder="Buscar"
+                >
+                <!--Con la class="form-control" le damos los estilos de bootstrap de formularios con me-2 le damos un espaciado
+                 de 2 a la derecha del input -->
+                <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+        
+        </div>
+        </div>
+        
+    </nav>
+    </header>
+
+    <main class="container"><!--Si a esta etiqueta main le coloco de una vez la class="container" le estoy indicando que quiero trabajar
+        con el sistema de columnas de bootstrap -->
+ 
+        <!---   carousel  -->
+
+        <div class="row textos">
+            <div class="col-md-12">
+                <h2 class="primera_linea">Professional Web Design</h2>
+                <h3 class="segunda_linea">Java, Python Developments</h3>
+            </div>
+        </div>
+         <div class="row">
+             <div class="col">
+                 <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item active">
+                             <img src="img/bg.jpg" class="w-100" alt="">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="img/s2.jpg" class="w-100" alt="">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="img/ 8.jpg" class="w-100" alt="">
+                         </div>
+                     </div>
+ 
+                     <!-- Controles de anterior y siguiente-->
+                     <!--Estos son los botones en forma de flecha que se haran a lado izquierdo y derecho de cada slideshow del carousel-->
+                     <button
+                      class="carousel-control-prev" 
+                      type="button"
+                      data-bs-target="#slideshow"
+                      data-bs-slide="prev"
+                     >
+                     <!--El data-bs-targer="#slideshow"Es para indicarle cual queremos que sea el carousel objetivo-->
+                     <!--data-bs-slide="prev" Es para saber que cuando presionemos el button quremos ir al anterior slide-->
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <!--Este span class="carousel-control-prev-icon" Es para agregar el icono de la flecha de anterior-->
+                     <span class="visually-hidden">Anterior</span>
+                     <!--Este span class="visually-hidden" Es para los dispositivos de lectura especiales para personas deshabilitadas que no pueden
+                     no pueden ver el button puedan ver el contenido del texto pero los dispositivos normales(tables,computadoras etc)no 
+                     tendran problema-->
+                     </button>
+                     <button
+                      class="carousel-control-next" 
+                      type="button"
+                      data-bs-target="#slideshow"
+                      data-bs-slide="next"
+                     >
+                     <!--El data-bs-targer="#slideshow"Es para indicarle cual queremos que sea el carousel objetivo-->
+                     <!--data-bs-slide="next" Es para saber que cuando presionemos el button quremos ir al siguiente slide-->
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <!--Este span class="carousel-control-next-icon" Es para agregar el icono de la flecha de anterior-->
+                     <span class="visually-hidden">Siguiente</span>
+                     <!--Este span class="visually-hidden" Es para los dispositivos de lectura especiales para personas deshabilitadas que no pueden
+                     no pueden ver el button puedan ver el contenido del texto pero los dispositivos normales(tables,computadoras etc)no 
+                     tendran problema-->
+                     </button>
+ 
+                     <!-- Indicadores -->
+                     <!--Estos son los 3 botones en forma de lineas que se haran en la parte de abajo de cada slideshow del carousel-->
+                     <div class="carousel-indicators">
+                         <button
+                          type="button"
+                          data-bs-target="#slideshow"
+                          data-bs-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide #1"
+                           ></button>
+                         <button
+                          type="button"
+                          data-bs-target="#slideshow"
+                          data-bs-slide-to="1"
+                          aria-current="true"
+                          aria-label="Slide #2"
+                           ></button>
+                         <button
+                          type="button"
+                          data-bs-target="#slideshow"
+                          data-bs-slide-to="2"
+                          aria-current="true"
+                          aria-label="Slide #3"
+                           ></button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </main>    
+        <section class="reviews">
+             <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <h2 class="titulo" id="Reviews"> Reviews </h2>
+                </div>
+                </div>
+
+                <section class="row widgets d-flex justify-content-around"><!--Le he agregado just-cont-around para que el espacio sobrante se reparta en partes iguales
+                                                                                   al rededor de los elementos-->
+                                                                                  
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <h3 class="nombre" id="Perfilfundador"> Perfiles</h3>
+                            <button class="btn btn-primary" type="button"><img src="perfiles/ cv_luis_english .pdf"> P/fundador</button>
+                            <p>Click derecho en el Archivo<br>y Click en la Pestaña nueva</p>
+                        </div>
+                        
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <h3 class="nombre" id="Misproyectos">Proyectos</h3>
+                            <button class="btn btn-primary" type="button"><img src="proyectos/Restaurante/index.html"> Misproyectos</button>
+                            <p>Click derecho en el Archivo<br>y Click en la Pestaña nueva</p>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <h3 class="nombre" id="Contactame"> Contacto</h3>
+                            <button class="btn btn-primary" type="button"><img src="formularios/formulario_Contactame.html/formulario_grid.html"> Contactame</button>
+                            <p>Click derecho en el Archivo<br> y Click en la Pestaña nueva</p>
+                        </div>
+
+                            
+                </section>
+            </div>
+                
+        </section>
+        
+        <footer >
+            <div class="container mt-3">
+                <div class="text">
+                <p>Copyright - LUMEZ  Web Design - Designed Site by Luis Carlos Mejía Z  -  2024</p>
+                </div>
+            </div>
+        </footer>
+    
+        
+         <script src="js/bootstrap.bundle.min.js"></script>
+         <script src="js/jquery-3.7.1.min.js"></script>
+         <script src="js/efectos.js"></script>
+         <script src="js/parallax.js"></script>
+</body>
+</html>
