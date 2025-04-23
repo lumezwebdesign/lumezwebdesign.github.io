@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, 
+    initial-scale=1.0, maximun-scalable=1.0, minimun-scalable=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="efectos.js"></script>
+    <script src="parallax.js"></script>
+    <title>Café LucamFlavor</title>
+</head>
+<body>
+    <header> <!--Esta es la etiqueta header que es la etiqueta de encabezado-->
+        <div class="contenedor">
+        <nav class="menu"> <!--Con esta etiqueta nav indicamos que es un menú de navegación-->
+         <a href="#" id="btn-acerca-de">Acerca de</a><!--El id es para acceder a c/u de los enlaces con Jquery y agregarle un evento-->
+         <a href="#" id="btn-menu">Menu</a> <!--Las etiquetas <a></a> son etiquetas de enlace-->
+         <a href="#" id="btn-galeria">Galeria</a>
+         <a href="#" id="btn-ubicacion">Ubicacion</a>
+
+       </nav>
+         <div class="textos">
+            <h1 class="nombre">Cafe <span>LucamFlavor</span></h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit</h3>
+         </div> 
+      </div>
+    </header>
+
+     <section class="main"> <!--El section se usa más que todo para elaborar por secciones nuestro documento html-->
+       <section class="acerca-de" id="acerca-de">
+         <div class="contenedor">
+           <div class="foto">
+            <img src="img/acerca-de.jpg" alt="">
+           </div>
+           <article>
+             <h3>Acerca de</h3>
+             <p>Lorem ipsum dolor sit amet. Et excepturi consequatur et consequuntur 
+              molestiae sit accusamus consequatur hic totam ratione. Et quas voluptatem 
+              sed pariatur distinctio sit molestiae galisum est soluta dolorem.</p> 
+              
+              <p>Lorem ipsum dolor sit amet. Et excepturi consequatur et consequuntur 
+                molestiae sit accusamus consequatur hic totam ratione. Et quas voluptatem 
+                sed pariatur distinctio sit molestiae galisum est soluta dolorem.</p> 
+                
+           </article>
+         </div>
+         </section>
+         <section class="menu">
+            <div class="contenedor">
+              <h3 class="titulo" id="platillos">Menu</h3>
+              <div class="contenedor-menu"> <!--Este contenedor menú representa las lineas del cuadro exterior de la tabla menú-->
+                <div class="contenedor-menu2"><!--Este contenedor menú representa las lineas del cuadro interior de la tabla menú-->
+                   <article>
+                    <p class="categoria">De Comer</p>
+                    <div class="platillo">
+                      <p class="nombre">Sed sagittis nisl dictum</p>
+                      <p class="precio">$ 15</p>
+                       <p class="descripcion">Praesent gravida augue sit amet dignissim rutrum
+                        enim tellus suscipit risus.</p>
+                       </div>
+                    <div class="platillo">
+                      <p class="nombre">Lorem ipsum dolor sit amet</p>
+                      <p class="precio">$ 10</p>
+                       <p class="descripcion">Vestibulum ac sem id massa tempor vestibulum sed
+                         ut magna.</p>
+                    </div>
+                    <div class="platillo">
+                      <p class="nombre">Sed sagittis nisl dictum</p>
+                      <p class="precio">$ 20</p>
+                       <p class="descripcion">Praesent gravida augue sit amet dignissim rutrum
+                        enim tellus suscipit risus.</p>
+                    </div>
+                    <div class="platillo">
+                      <p class="nombre">Sed sagittis nisl dictum</p>
+                      <p class="precio">$35</p>
+                       <p class="descripcion">Praesent gravida augue sit amet dignissim rutrum
+                        enim tellus suscipit risus.</p>
+                    </div>
+                    </article>
+
+                    <article>
+                      <p class="categoria">De Beber</p>
+                      <div class="platillo">
+                        <p class="nombre">Sed sagittis nisl dictum</p>
+                        <p class="precio">$ 15</p>
+                         <p class="descripcion">Praesent gravida augue sit amet dignissim rutrum
+                          enim tellus suscipit risus.</p>
+                         </div>
+                      <div class="platillo">
+                        <p class="nombre">Lorem ipsum dolor sit amet</p>
+                        <p class="precio">$ 10</p>
+                         <p class="descripcion">Vestibulum ac sem id massa tempor vestibulum sed
+                           ut magna.</p>
+                      </div>
+                      <div class="platillo">
+                        <p class="nombre">Sed sagittis nisl dictum</p>
+                        <p class="precio">$ 20</p>
+                         <p class="descripcion">Praesent gravida augue sit amet dignissim rutrum
+                          enim tellus suscipit risus.</p>
+                      </div>
+                      <div class="platillo">
+                        <p class="nombre">Sed sagittis nisl dictum</p>
+                        <p class="precio">$35</p>
+                         <p class="descripcion">Praesent gravida augue sit amet dignissim rutrum
+                          enim tellus suscipit risus.</p>
+                      </div>
+                      </article>
+                    </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="galeria" id="galeria">
+              <div class="foto">
+                <img src="img/capuchino.jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafelate.jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafe(5).jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafes.jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafe(1).jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafe(2).jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafe(3).jpg" alt="">
+              </div>
+              <div class="foto">
+                <img src="img/cafe(4).jpg" alt="">
+              </div>
+              </section>
+
+              <section class="ubicacion" id="ubicacion">
+                 <div class="contenedor">
+                    <h3 class="titulo">Ubicacion</h3>
+                    <div class="direccion">
+                      <h4>Direccion</h4>
+                      <p class="calle">2915 Primrose Lane<br>Anaheim, CA 92806</p>
+                      <p class="telefono">(503) 400-5479</p>
+                      <p class="correo">correo [arroba] tucorreo.com</p> <!--Esto es para evadir los correos basura-->
+                      </div>
+
+                    <div class="horarios">
+                      <h4>Horarios</h4>
+                      <p class="entre-semana">Lunes a Viernes<br>7:00am - 9:00pm</p>
+                      <p class="fin-semana">Sabados y Domingos<br>11:00am - 10:00pm</p>
+                    </div>
+
+                 </div>
+
+              </section>
+
+              <section class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d53025.18316850639!2d-117.91336727253933!3d33.
+                83620354891569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x80dcd6fbc9de3873%3A0x942d12839118c36c!2sAnaheim
+                %2C%20CA%2092806%2C%20USA!3m2!1d33.8362104!2d-117.8721676!4m0!5e0!3m2!1sen!2sco!4v1694028849608!5m2!1sen!2sco" 
+                width="16000" height="550" frameborder="0"style="border:0" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </section>
+              </section>
+
+          <footer>
+            <div class="contenedor">
+              <div class="copyright">
+                <p>Copyright - LCM - Designed site by Luis Carlos Mejía 2023</p>
+              </div>
+            </div>
+          </footer>
+       
+</body>
+</html>
